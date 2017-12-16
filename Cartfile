@@ -1,0 +1,4 @@
+github "Sky-And-Hammer/GSStability"
+
+github "kishikawakatsumi/KeychainAccess" ==3.1.0
+github "alibaba/HandyJSON"
