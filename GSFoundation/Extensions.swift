@@ -21,7 +21,7 @@ public func _fatailError<T>(_ msg: String = "调用有问题，正常不应该�
     #if DEBUG
         fatalError(msg)
     #else
-        return value
+        return try value()
     #endif
 }
 
