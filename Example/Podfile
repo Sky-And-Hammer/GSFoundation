@@ -1,0 +1,9 @@
+source 'git@github.com:Sky-And-Hammer/CocoaPodsSpec.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks!
+target 'GSFoundation_Tests' do
+  pod 'GSFoundation', :path => '../'
+  
+  
+end
