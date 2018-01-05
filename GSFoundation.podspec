@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GSFoundation'
-  s.version          = '0.1.1'
+  s.version          = '0.6.0'
   s.summary          = 'GSFoundation BY GLOOMY.'
 
 # This description is used to generate tags and improve search results.
@@ -40,6 +40,6 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'GSStability'
-  s.dependency 'KeychainAccess', '3.1.0'
+  s.dependency 'KeychainAccess', '~> 3.1.0'
   # s.dependency 'HandyJSON', '4.0.0-beta.1'
 end
