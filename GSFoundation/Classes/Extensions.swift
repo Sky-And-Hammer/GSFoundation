@@ -27,6 +27,47 @@ public func _fatailError<T>(_ msg: String = "调用有问题，正常不应该�
 
 // MARK: - Public
 
+//public extension Array {
+//
+//
+//    /// 指定序号去获取数组的内容
+//    /// - Note: 如果本身下表越界则不会加入到返回数据中，也就是个数会少。
+//    ///
+//    /// - Parameter indexes: 下标
+//    func at(indexes: Int...) -> [Element] { return at(indexes: indexes) }
+//
+//    /// 指定序号去获取数组的内容
+//    /// - Note: 如果本身下表越界则不会加入到返回数据中，也就是个数会少。
+//    ///
+//    /// - Parameter indexes: 下标
+//    func at(indexes: [Int]) -> [Element] {
+//        var result = [Element].init()
+//        indexes.forEach {
+//            guard let element = self[gs: $0] else { return }
+//            result.append(element)
+//        }
+//
+//        return result
+//    }
+//
+//    /// 将数据按照指定大小切割成多个数组
+//    ///
+//    /// - Parameter size: 指定大小
+//    func chunk(size: Int = 1) -> [[Element]] {
+//        var result = [[Element]].init()
+//        var chunk = -1
+//        enumerated().forEach {
+//            if $0.offset % size == 0 {
+//                result.append([Element].init());
+//                chunk += 1
+//            }
+//            result[chunk].append($0.element)
+//        }
+//
+//        return result
+//    }
+//}
+
 // MARK: - String
 
 public extension Array {
@@ -35,6 +76,7 @@ public extension Array {
     ///
     /// - Parameter index: 越界会返回 nil
     public subscript(gs index: Int) -> Element? {
+        guard index >= 0 else { return nil }
         return count > index ? self[index] : nil
     }
     
@@ -42,7 +84,7 @@ public extension Array {
     ///
     /// - Parameter bounds: 越界会返回 []
     public subscript(gs bounds: Range<Int>) -> ArraySlice<Element> {
-        return bounds.lowerBound > -1 && bounds.upperBound < count ? self[bounds] : []
+        return bounds.lowerBound > -1 && bounds.upperBound < count && bounds.lowerBound <= bounds.upperBound ? self[bounds] : []
     }
 }
 

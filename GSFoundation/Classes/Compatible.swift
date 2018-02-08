@@ -14,13 +14,15 @@ extension String: Compatible {}
 extension Date: Compatible {}
 extension DispatchQueue: Compatible {}
 extension NotificationCenter: Compatible {}
+//extension Array: Compatible {}
 
+// MARK: NotificationCenter
 
 extension GS where Base: NotificationCenter {
     
     @discardableResult
-    public func addObserver<T: AnyObject>(_ observer: T, name: Notification.Name, object anObject: AnyObject?, queue: OperationQueue? = OperationQueue.main, handler: @escaping (_ observer: T, _ notification: Notification) -> Void) -> AnyObject {
-        let observation = base.addObserver(forName: name, object: anObject, queue: queue) { [unowned observer] noti in handler(observer, noti) }
+    public func addObserver<T: AnyObject>(_ observer: T, name: Notification.Name, object anObject: AnyObject?, queue: OperationQueue? = OperationQueue.main, handler: @escaping (_ observer: T?, _ notification: Notification) -> Void) -> AnyObject {
+        let observation = base.addObserver(forName: name, object: anObject, queue: queue) { [weak observer] noti in handler(observer, noti) }
         GSObserveationRemovr.init(observation).makeRetainBy(observer)
         return observation
     }
