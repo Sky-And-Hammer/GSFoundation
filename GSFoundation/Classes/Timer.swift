@@ -92,9 +92,8 @@ extension GSTimer {
     }
 }
 
-/// GCD 倒计时 Timer.
+/// GCD Count Down Timer.
 /// For example:
-///
 ///
 ///     GSCountDownTimer(interval: .seconds(1), times: 120) { [weak self] (_, times) in
 ///          self?.timerRepeat(expire: times)

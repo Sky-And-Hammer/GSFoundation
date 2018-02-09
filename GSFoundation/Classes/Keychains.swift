@@ -10,10 +10,8 @@ import Foundation
 import GSStability
 import KeychainAccess
 
-extension Constant {
-    
-    public static let KeyChainsServerName = Constant(rawValue: "com.Sky-And-Hammer.ios")
-}
+
+public let KeyChainsServerName = "com.Sky-And-Hammer.ios"
 
 /// 需要存储内容的协议
 public protocol KeychainsType {
@@ -24,7 +22,7 @@ public protocol KeychainsType {
 
 public struct Keychains {
 
-    fileprivate static var keychain = Keychain(service: Constant.KeyChainsServerName.rawValue)
+    fileprivate static var keychain = Keychain(service: KeyChainsServerName)
 
     /// 初始化，其中只会初始化设备唯一 ID
     /// 初次安装 会在 UserDefaults.standard 写入 key，来保证 多次安装时不会使用脏数据
@@ -33,9 +31,9 @@ public struct Keychains {
             set(key: Normal.deviceID, value: UIDevice.current.identifierForVendor?.uuidString ?? "0IOS0UDID0NOT0FOUND")
         }
 
-        if !UserDefaults.standard.bool(forKey: Constant.KeyChainsServerName.rawValue) {
+        if !UserDefaults.standard.bool(forKey: KeyChainsServerName) {
             destory()
-            UserDefaults.standard.set(true, forKey: Constant.KeyChainsServerName.rawValue)
+            UserDefaults.standard.set(true, forKey: KeyChainsServerName)
         }
     }
 

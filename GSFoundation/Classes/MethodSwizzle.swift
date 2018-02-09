@@ -86,8 +86,6 @@ private func SwizzleMethod(origClass:AnyClass!,origSelector: Selector,toAlterSel
         return SwizzleResult.AlternateMethodNotFound
     }
     
-    
-    
     _ = class_addMethod(origClass,
                         origSelector,method_getImplementation(origMethod),
                         method_getTypeEncoding(origMethod))

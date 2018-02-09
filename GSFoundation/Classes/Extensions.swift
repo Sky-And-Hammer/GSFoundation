@@ -8,15 +8,7 @@
 
 import Foundation
 
-// MARK: - FatalError
-
-/// <#Description#>
-///
-/// - Parameters:
-///   - msg: <#msg description#>
-///   - value: <#value description#>
-/// - Returns: <#return value description#>
-/// - Throws: <#throws value description#>
+/// Convenience for 'fatalError()' with a default value, to use in DEBUG or not
 public func _fatailError<T>(_ msg: String = "调用有问题，正常不应该执行这里", value: @autoclosure () throws -> T) rethrows -> T {
     #if DEBUG
         fatalError(msg)
@@ -25,49 +17,6 @@ public func _fatailError<T>(_ msg: String = "调用有问题，正常不应该�
     #endif
 }
 
-// MARK: - Public
-
-//public extension Array {
-//
-//
-//    /// 指定序号去获取数组的内容
-//    /// - Note: 如果本身下表越界则不会加入到返回数据中，也就是个数会少。
-//    ///
-//    /// - Parameter indexes: 下标
-//    func at(indexes: Int...) -> [Element] { return at(indexes: indexes) }
-//
-//    /// 指定序号去获取数组的内容
-//    /// - Note: 如果本身下表越界则不会加入到返回数据中，也就是个数会少。
-//    ///
-//    /// - Parameter indexes: 下标
-//    func at(indexes: [Int]) -> [Element] {
-//        var result = [Element].init()
-//        indexes.forEach {
-//            guard let element = self[gs: $0] else { return }
-//            result.append(element)
-//        }
-//
-//        return result
-//    }
-//
-//    /// 将数据按照指定大小切割成多个数组
-//    ///
-//    /// - Parameter size: 指定大小
-//    func chunk(size: Int = 1) -> [[Element]] {
-//        var result = [[Element]].init()
-//        var chunk = -1
-//        enumerated().forEach {
-//            if $0.offset % size == 0 {
-//                result.append([Element].init());
-//                chunk += 1
-//            }
-//            result[chunk].append($0.element)
-//        }
-//
-//        return result
-//    }
-//}
-
 // MARK: - String
 
 public extension Array {
@@ -75,14 +24,19 @@ public extension Array {
     /// 安全获取数组中数据 防止越界
     ///
     /// - Parameter index: 越界会返回 nil
+    
+    
+    /// Safely to get object from an array. if index < 0 or index > array.count, will return nil
+    ///
+    /// - Parameter index: the index of object needed
     public subscript(gs index: Int) -> Element? {
         guard index >= 0 else { return nil }
         return count > index ? self[index] : nil
     }
     
-    /// 安全获取数组中数据 防止越界
+    /// Safely to get object from an array. if range out of bounds, will return empty array
     ///
-    /// - Parameter bounds: 越界会返回 []
+    /// - Parameter bounds: the range of objects needed
     public subscript(gs bounds: Range<Int>) -> ArraySlice<Element> {
         return bounds.lowerBound > -1 && bounds.upperBound < count && bounds.lowerBound <= bounds.upperBound ? self[bounds] : []
     }
@@ -93,7 +47,13 @@ public extension Array {
 
 public extension Bundle {
     
-    /// app 打包环境
+    /// A value of app packaging environment
+    ///
+    /// All values:
+    ///
+    ///     Beta(if is DEBUG)
+    ///     In-House
+    ///     AppStore
     static var appChannel: String {
         #if DEBUG
             return "Beta"
@@ -102,74 +62,23 @@ public extension Bundle {
         #endif
     }
     
-    /// 版本号
-    static var shortVersion: String {
-        return main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
-    }
+    /// A value of app version. 'CFBundleShortVersionString' in plist file. "" by default
+    static var shortVersion: String { return main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "" }
     
-    /// build 版本号
-    static var buildVersion: String {
-        return main.infoDictionary?[kCFBundleVersionKey as String] as? String ?? ""
-    }
+    /// A value of app build version. 'kCFBundleVersionKey' in plist file. "" by default
+    static var buildVersion: String { return main.infoDictionary?[kCFBundleVersionKey as String] as? String ?? "" }
     
-    /// bundle ID
-    static var identifier: String {
-        return main.bundleIdentifier ?? ""
-    }
+    /// A value of app bundleIdentifier. "" by default
+    static var identifier: String { return main.bundleIdentifier ?? "" }
     
-    /// 是否 In-House 版本
+    /// A value for app is in-house version
     static var isInHouse: Bool {
         return main.bundleIdentifier?.contains("inhouse") ?? false
     }
     
-    /// app 显示名
+    /// A value of app display name. 'CFBundleDisplayName' in plist file. "" by default
     static var displayName: String {
         return "\(main.object(forInfoDictionaryKey: "CFBundleDisplayName") ?? "")"
-    }
-    
-    /// 'displayName' V'shortVersion'
-    public static var appVersion: String {
-        return "\(displayName) V\(shortVersion)"
-    }
-}
-
-// MARK: - DispatchQueue
-public extension DispatchQueue {
-    
-    private static var _onceTracker = [String]()
-    
-    /// 执行一次
-    ///
-    /// - Parameters:
-    ///   - token: 标示 token
-    ///   - block: 执行 closur
-    static func once(token: String, block: ()-> Void) {
-        objc_sync_enter(self)
-        defer {
-            objc_sync_exit(self)
-        }
-        
-        guard !_onceTracker.contains(token) else {
-            return
-        }
-        
-        _onceTracker.append(token)
-        block()
-    }
-}
-
-// MARK: - Internal
-
-// MARK: - DateComponents
-
-extension DateComponents {
-    
-    init(days: Int, hours: Int, minutes: Int, seconds: Int) {
-        self.init()
-        self.day = days
-        self.hour = hours
-        self.minute = minutes
-        self.second = seconds
     }
 }
 
