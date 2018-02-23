@@ -151,7 +151,10 @@ extension _Metadata {
         // other fields we don't care
         
         func class_rw_t() -> UnsafePointer<_class_rw_t>? {
-            if is64BitPlatform { return UnsafePointer<_class_rw_t>(bitPattern: UInt.init(UInt64.init(databits) & UInt64.init(0x00007ffffffffff8))) }
+            if is64BitPlatform {
+                let fast_data_mask: UInt64 = 0x00007ffffffffff8
+                let databits_t: UInt64 = UInt64(databits)
+                return UnsafePointer<_class_rw_t>(bitPattern: UInt(databits_t & fast_data_mask)) }
             else { return UnsafePointer<_class_rw_t>(bitPattern: self.databits & 0xfffffffc) }
         }
     }
