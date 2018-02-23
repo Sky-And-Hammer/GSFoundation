@@ -10,100 +10,79 @@ import Foundation
 import GSStability
 import KeychainAccess
 
-
-public let KeyChainsServerName = "com.Sky-And-Hammer.ios"
-
-/// 需要存储内容的协议
-public protocol KeychainsType {
-
-    /// 存储 keychain 的key
-    func keyIdentifier() -> String
+/// A struct for identfy the device, include an uuid and timestamp for initialized
+public struct GSDeviceID: GSJSONType {
+    
+    var uuid: String
+    var timestamp: Double
+    
+    public init() {
+        uuid = UIDevice.current.identifierForVendor?.uuidString ?? "0IOS0UDID0NOT0FOUND"
+        timestamp = Date.init().timeIntervalSince1970
+    }
 }
 
-public struct Keychains {
+/// Represents a 'GSKeychainKey' with an associated generic value type confirming to the 'GSJSONType' protocol
+///
+///     static let someKey = Key<ValyeType>("someKey")
+public struct GSKeychainKey<ValueType: GSJSONType> {
+    
+    fileprivate let key: String
+    
+    public init(_ key: String) { self.key = key }
+}
 
-    fileprivate static var keychain = Keychain(service: KeyChainsServerName)
+/// Provides strongly typed values associated with the lifetime of an application. Apropriate for user perferences
+public struct GSKeychain {
 
-    /// 初始化，其中只会初始化设备唯一 ID
-    /// 初次安装 会在 UserDefaults.standard 写入 key，来保证 多次安装时不会使用脏数据
-    public static func initialization() {
-        if get(key: Normal.deviceID)?.isEmpty ?? true {
-            set(key: Normal.deviceID, value: UIDevice.current.identifierForVendor?.uuidString ?? "0IOS0UDID0NOT0FOUND")
-        }
+    fileprivate var keychain: Keychain
 
-        if !UserDefaults.standard.bool(forKey: KeyChainsServerName) {
-            destory()
-            UserDefaults.standard.set(true, forKey: KeyChainsServerName)
+    /// Shared instanche of 'GSKeychain'. used for 'Bundle.main.bundleIdentifier' for service name
+    public static let `default`: GSKeychain = {
+        return GSKeychain.init(keychain: Keychain.init(service: Bundle.identifier))
+    }()
+
+    
+    public var deviceId = GSKeychainKey<GSDeviceID>.init("GSKeychain.deviceId")
+
+    public init(keychain: Keychain) { self.keychain = keychain; initialization() }
+
+    private func initialization() {
+        if self.keychain.service == Bundle.identifier {
+            guard get(key: deviceId) == nil else { return }
+            
+            set(key: deviceId, value: GSDeviceID.init())
+        } else {
+            set(key: deviceId, value: GSKeychain.default.get(key: GSKeychain.default.deviceId))
         }
     }
 
-    /// 删除除去设备唯一 ID 的其他内容
-    public static func destory() {
+    
+    /// A function to delete allKeys, exclude the device id
+    public func destory() {
         keychain.allKeys().forEach {
-            if $0 != Normal.deviceID.keyIdentifier() {
-                try? keychain.remove($0)
+            if $0 != deviceId.key {
+                do {
+                    try keychain.remove($0)
+                } catch {
+                    Logger.error(error.localizedDescription)
+                }
             }
         }
     }
-
-    /// 设备唯一 ID 到 keychain
-    public static func deviceID() -> String {
-        guard let value = get(key: Normal.deviceID) else {
-            return "0IOS0UDID0NOT0FOUND"
-        }
-
-        return value
-    }
-
-    enum Normal: KeychainsType {
-        case deviceID
-
-        func keyIdentifier() -> String {
-            return "Normal.deviceID"
-        }
-    }
 }
 
-public extension Keychains {
-
-    /// 获取指定 key 的 value
+public extension GSKeychain {
+    /// Get the value in `ValueType` of the key in `GSKeychainKey` you given from Keychain. nil by not found
     ///
-    /// - Parameter key: 指定 key
-    /// - Returns: 对应 value， nil 的时候为不存在
-    static func get(key: KeychainsType) -> String? {
-        return keychain[key.keyIdentifier()]
-    }
+    /// - Parameter key: the key of value. nil by not found
+    func get<ValueType>(key: GSKeychainKey<ValueType>) -> ValueType? { return ValueType.from(JSON: keychain[key.key]) }
 
-//    /// 获取指定 key 的 model
-//    ///
-//    /// - Parameters:
-//    ///   - key: 指定 key
-//    ///   - type: 类型
-//    /// - Returns: 对应 value， nil 的时候为不存在
-//    static func get<T: HandyJSON>(key: KeychainsType, type: T.Type) -> T? {
-//        guard let value = JSONDeserializer<T>.deserializeFrom(json: Keychains.get(key: key)) else {
-//            return nil
-//        }
-//
-//        return value
-//    }
-
-    /// 存储 key-value
+    /// Save the value in `ValueType` of the key in `GSKeychainKey` you given to Keychain. nil value like delete
     ///
     /// - Parameters:
-    ///   - key: 指定 key
-    ///   - value: 指定 value， nil 为删除
-    static func set(key: KeychainsType, value: String?) {
-        keychain[key.keyIdentifier()] = value
-    }
-
-    /// 存储 key-value
-    ///
-    /// - Parameters:
-    ///   - key: 指定 key
-    ///   - value: 指定 value， nil 为删除
-    static func set(key: KeychainsType, model: GSJSON?) {
-        set(key: key, value: model?.toJSONString())
-    }
+    ///   - key: the key of value
+    ///   - value: the value for saven. nil for delete
+    func set<ValueType>(key: GSKeychainKey<ValueType>, value: ValueType?) { keychain[key.key] = value?.toJSONString() }
 }
 

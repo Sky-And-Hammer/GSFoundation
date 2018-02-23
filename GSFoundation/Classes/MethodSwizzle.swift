@@ -8,11 +8,11 @@
 
 import Foundation
 
-/// 方法替换结果
+/// Methods swizzle result enum
 ///
-/// - succeed: 成功
-/// - originMethodNotFound: 未找到原方法
-/// - alternateMethodNotFound: 未找到替换方法
+/// - succeed: succeed
+/// - originMethodNotFound: can't found origin method
+/// - alternateMethodNotFound: can't found alternate method 
 public enum SwizzleResult {
     case Succeed
     case OriginMethodNotFound

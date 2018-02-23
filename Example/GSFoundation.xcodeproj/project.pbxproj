@@ -8,7 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		46C2B3C7CCDAFD34BC49B6CD /* Pods_GSFoundation_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849A81EC00BF61071801CA4D /* Pods_GSFoundation_Tests.framework */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		ED4010BA203EAAE900FF2A23 /* BasicTypesInClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4010B9203EAAE900FF2A23 /* BasicTypesInClass.swift */; };
+		ED4010BC203EAB0B00FF2A23 /* BasicTypesInClassTestsToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4010BB203EAB0B00FF2A23 /* BasicTypesInClassTestsToJSON.swift */; };
+		EDD7130E203FEF4200C7434E /* BasicTypesInClassTestsFromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD7130D203FEF4100C7434E /* BasicTypesInClassTestsFromJSON.swift */; };
+		EDD713122040003400C7434E /* BasicTypesInStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD713112040003400C7434E /* BasicTypesInStruct.swift */; };
+		EDD713142040004B00C7434E /* BasicTypesInStructTestsToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD713132040004B00C7434E /* BasicTypesInStructTestsToJSON.swift */; };
+		EDD713162040021300C7434E /* BasicTypesInStructTestsFromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD713152040021300C7434E /* BasicTypesInStructTestsFromJSON.swift */; };
+		EDD713182040028700C7434E /* NestTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD713172040028600C7434E /* NestTypes.swift */; };
+		EDD7131A2040029A00C7434E /* NestTypesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD713192040029A00C7434E /* NestTypesTest.swift */; };
+		EDD7131C204002D300C7434E /* OtherFeaturesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD7131B204002D300C7434E /* OtherFeaturesTest.swift */; };
+		EDD7131E20401D9100C7434E /* CustomTransfromTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD7131D20401D9100C7434E /* CustomTransfromTypes.swift */; };
+		EDD7132020401E1200C7434E /* CustomTransformTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD7131F20401E1100C7434E /* CustomTransformTest.swift */; };
+		EDD7132220401E5500C7434E /* InvalidStateHandlingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD7132120401E5500C7434E /* InvalidStateHandlingTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,11 +27,22 @@
 		45E3DF44A9E86283BD2BA018 /* Pods-GSFoundation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSFoundation_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GSFoundation_Tests/Pods-GSFoundation_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* GSFoundation_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GSFoundation_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6761A36880053281F9802386 /* GSFoundation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GSFoundation.podspec; path = ../GSFoundation.podspec; sourceTree = "<group>"; };
+		6761A36880053281F9802386 /* GSFoundation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GSFoundation.podspec; path = ../GSFoundation.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		67A58D8D6871137D79EB8E07 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		849A81EC00BF61071801CA4D /* Pods_GSFoundation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GSFoundation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E645AE8F8F1C37C762E7B375 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		ED4010B9203EAAE900FF2A23 /* BasicTypesInClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTypesInClass.swift; sourceTree = "<group>"; };
+		ED4010BB203EAB0B00FF2A23 /* BasicTypesInClassTestsToJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTypesInClassTestsToJSON.swift; sourceTree = "<group>"; };
+		EDD7130D203FEF4100C7434E /* BasicTypesInClassTestsFromJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTypesInClassTestsFromJSON.swift; sourceTree = "<group>"; };
+		EDD713112040003400C7434E /* BasicTypesInStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTypesInStruct.swift; sourceTree = "<group>"; };
+		EDD713132040004B00C7434E /* BasicTypesInStructTestsToJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTypesInStructTestsToJSON.swift; sourceTree = "<group>"; };
+		EDD713152040021300C7434E /* BasicTypesInStructTestsFromJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTypesInStructTestsFromJSON.swift; sourceTree = "<group>"; };
+		EDD713172040028600C7434E /* NestTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NestTypes.swift; sourceTree = "<group>"; };
+		EDD713192040029A00C7434E /* NestTypesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NestTypesTest.swift; sourceTree = "<group>"; };
+		EDD7131B204002D300C7434E /* OtherFeaturesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherFeaturesTest.swift; sourceTree = "<group>"; };
+		EDD7131D20401D9100C7434E /* CustomTransfromTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransfromTypes.swift; sourceTree = "<group>"; };
+		EDD7131F20401E1100C7434E /* CustomTransformTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransformTest.swift; sourceTree = "<group>"; };
+		EDD7132120401E5500C7434E /* InvalidStateHandlingTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvalidStateHandlingTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +96,18 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				ED4010B9203EAAE900FF2A23 /* BasicTypesInClass.swift */,
+				ED4010BB203EAB0B00FF2A23 /* BasicTypesInClassTestsToJSON.swift */,
+				EDD7130D203FEF4100C7434E /* BasicTypesInClassTestsFromJSON.swift */,
+				EDD713112040003400C7434E /* BasicTypesInStruct.swift */,
+				EDD713132040004B00C7434E /* BasicTypesInStructTestsToJSON.swift */,
+				EDD713152040021300C7434E /* BasicTypesInStructTestsFromJSON.swift */,
+				EDD713172040028600C7434E /* NestTypes.swift */,
+				EDD713192040029A00C7434E /* NestTypesTest.swift */,
+				EDD7131B204002D300C7434E /* OtherFeaturesTest.swift */,
+				EDD7131D20401D9100C7434E /* CustomTransfromTypes.swift */,
+				EDD7131F20401E1100C7434E /* CustomTransformTest.swift */,
+				EDD7132120401E5500C7434E /* InvalidStateHandlingTest.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -134,7 +167,7 @@
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = MD84C7GYX5;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 0920;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -230,7 +263,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				EDD713162040021300C7434E /* BasicTypesInStructTestsFromJSON.swift in Sources */,
+				EDD713142040004B00C7434E /* BasicTypesInStructTestsToJSON.swift in Sources */,
+				ED4010BC203EAB0B00FF2A23 /* BasicTypesInClassTestsToJSON.swift in Sources */,
+				ED4010BA203EAAE900FF2A23 /* BasicTypesInClass.swift in Sources */,
+				EDD713122040003400C7434E /* BasicTypesInStruct.swift in Sources */,
+				EDD7132020401E1200C7434E /* CustomTransformTest.swift in Sources */,
+				EDD7132220401E5500C7434E /* InvalidStateHandlingTest.swift in Sources */,
+				EDD7131A2040029A00C7434E /* NestTypesTest.swift in Sources */,
+				EDD7130E203FEF4200C7434E /* BasicTypesInClassTestsFromJSON.swift in Sources */,
+				EDD713182040028700C7434E /* NestTypes.swift in Sources */,
+				EDD7131C204002D300C7434E /* OtherFeaturesTest.swift in Sources */,
+				EDD7131E20401D9100C7434E /* CustomTransfromTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +384,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0579BA4C01B528354637470D /* Pods-GSFoundation_Tests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = MD84C7GYX5;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -350,6 +395,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -359,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 45E3DF44A9E86283BD2BA018 /* Pods-GSFoundation_Tests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = MD84C7GYX5;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;

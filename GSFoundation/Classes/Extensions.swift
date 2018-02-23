@@ -21,11 +21,6 @@ public func _fatailError<T>(_ msg: String = "调用有问题，正常不应该�
 
 public extension Array {
     
-    /// 安全获取数组中数据 防止越界
-    ///
-    /// - Parameter index: 越界会返回 nil
-    
-    
     /// Safely to get object from an array. if index < 0 or index > array.count, will return nil
     ///
     /// - Parameter index: the index of object needed

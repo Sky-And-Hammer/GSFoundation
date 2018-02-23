@@ -78,12 +78,25 @@ extension Interval {
     public static func >=<OtherUnit>(lhs: Interval<Unit>, rhs: Interval<OtherUnit>) -> Bool { return lhs >= rhs.converted() }
 }
 
+/// The one day time unit
 public enum Day: TimeUnit { public static var toTimeIntervalRatio: Double { return 86400 } }
+
+/// The one hour time unit
 public enum Hour: TimeUnit { public static var toTimeIntervalRatio: Double { return 3600 } }
+
+/// The one minute time unit
 public enum Minute: TimeUnit { public static var toTimeIntervalRatio: Double { return 60 } }
+
+/// The one second time unit
 public enum Second: TimeUnit { public static var toTimeIntervalRatio: Double { return 1 } }
+
+/// The one millsecond time unit
 public enum Millsecond: TimeUnit { public static var toTimeIntervalRatio: Double { return 0.001 } }
+
+/// The one microsecond time unit
 public enum Microsecond: TimeUnit { public static var toTimeIntervalRatio: Double { return 0.000001 } }
+
+/// The one nanosecond time unit
 public enum Nanosecond: TimeUnit { public static var toTimeIntervalRatio: Double { return 1e-9 } }
 
 extension TimeUnit {

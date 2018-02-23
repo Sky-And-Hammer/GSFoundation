@@ -18,7 +18,7 @@ else
 
 	# 1.更新 jazzy documents
     echo "Begin Generate jazzy Document...."
-	echo $(cd ${Module_Code_Path}; jazzy -m ${Module_Name} -x -workspace,${Module_Name}.xcworkspace,-scheme,${Module_Name} -c -a Gloomy.Sunday -u https://github.com/GloomySunday049 -g https://github.com/orgs/Sky-And-Hammer -o ${Module_Path}/docs --min-acl internal)
+	echo $(cd ${Module_Code_Path}; jazzy -m ${Module_Name} -x -workspace,${Module_Name}.xcworkspace,-scheme,${Module_Name} -c -a Gloomy.Sunday -u https://github.com/GloomySunday049 -g https://github.com/orgs/Sky-And-Hammer -o ${Module_Path}/docs --min-acl public)
 	echo "\nGit Commit For Document Updated "
 	echo $(cd ${Module_Path};git add .; git commit -m "Updated: code documents updated")
 

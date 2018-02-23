@@ -8,10 +8,10 @@
 import Foundation
 import GSStability
 
-/// Represents a 'Key' with an associated generic value type confirming to the 'Codable' protocol
+/// Represents a 'GSDefaultsKey' with an associated generic value type confirming to the 'Codable' protocol
 ///
 ///     static let someKey = Key<ValyeType>("someKey")
-public final class Key<ValueType: Codable> {
+public struct GSDefaultsKey<ValueType: Codable> {
     
     fileprivate let key: String
     
@@ -37,7 +37,7 @@ public struct GSDefaults {
     /// Deletes the value associated with the specified key, if any
     ///
     /// - Parameter key: the key
-    public func clear<ValueType>(_ key: Key<ValueType>) {
+    public func clear<ValueType>(_ key: GSDefaultsKey<ValueType>) {
         userDefaults.do {
             $0.set(nil, forKey: key.key)
             $0.synchronize()
@@ -48,13 +48,13 @@ public struct GSDefaults {
     ///
     /// - Parameter key: the key to look for
     /// - Returns: a boolean value indicating if a value exists for the specified key
-    public func has<ValueType>(_ key: Key<ValueType>) -> Bool { return userDefaults.value(forKey: key.key) != nil }
+    public func has<ValueType>(_ key: GSDefaultsKey<ValueType>) -> Bool { return userDefaults.value(forKey: key.key) != nil }
     
     /// Returns the value asspciated with the specified key
     ///
     /// - Parameter key: the key
     /// - Returns: a 'ValueType' or nil if the key was not found
-    public func get<ValueType>(for key: Key<ValueType>) -> ValueType? {
+    public func get<ValueType>(for key: GSDefaultsKey<ValueType>) -> ValueType? {
         if isSwiftCodableType(ValueType.self) || isFoundationCodableType(ValueType.self) {
             return userDefaults.value(forKey: key.key) as? ValueType
         } else {
@@ -77,7 +77,7 @@ public struct GSDefaults {
     /// - Parameters:
     ///   - value: the value to set
     ///   - key: the associated 'Key<ValueType>'
-    public func set<ValueType>(_ value: ValueType, for key: Key<ValueType>) {
+    public func set<ValueType>(_ value: ValueType, for key: GSDefaultsKey<ValueType>) {
         if isSwiftCodableType(ValueType.self) || isFoundationCodableType(ValueType.self) {
             userDefaults.set(value, forKey: key.key)
         } else {
