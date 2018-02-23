@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Interval Struct Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/Interval" class="dashAnchor"></a>
+    <a title="Interval Struct Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">GSFoundation Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/orgs/Sky-And-Hammer"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">GSFoundation Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Interval Struct Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CustomDateFormatterTransform.html">CustomDateFormatterTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DataTransform.html">DataTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DateFormatterTransform.html">DateFormatterTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DateTransform.html">DateTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DecimalTransform.html">DecimalTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnumTransform.html">EnumTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GSCountDownTimer.html">GSCountDownTimer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GSTimer.html">GSTimer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HexColorTransfrom.html">HexColorTransfrom</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IS09601DateTransform.html">IS09601DateTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:12GSFoundation6MapperC">Mapper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MappingPropertyHandler.html">MappingPropertyHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransformOf.html">TransformOf</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/URLTransform.html">URLTransform</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Day.html">Day</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Hour.html">Hour</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Microsecond.html">Microsecond</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Millsecond.html">Millsecond</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Minute.html">Minute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Nanosecond.html">Nanosecond</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Second.html">Second</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SwizzleResult.html">SwizzleResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Collection.html">Collection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DispatchQoS.html">DispatchQoS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DispatchQoS/QoSClass.html">– QoSClass</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DispatchTimeInterval.html">DispatchTimeInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Double.html">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/GS.html">GS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSObject.html">NSObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/RawRepresentable.html">RawRepresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/qos_class_t.html">qos_class_t</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12GSFoundation3llloiyAA6MapperC_SaySi_AA22MappingPropertyHandlerCtGtF">&lt;&lt;&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12GSFoundation3llloiyAA6MapperC_Si_AA22MappingPropertyHandlerCttF">&lt;&lt;&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&gt;&gt;&gt;(_:_:).html">&gt;&gt;&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12GSFoundation12_fatailErrorxSS_xyKXK5valuetKlF">_fatailError(_:value:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:12GSFoundation25GSJSONCustomTransformableP">GSJSONCustomTransformable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:12GSFoundation14GSJSONEnumTypeP">GSJSONEnumType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GSJSONType.html">GSJSONType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TimeUnit.html">TimeUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TransformType.html">TransformType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/_ExtendCustomBasicType.html">_ExtendCustomBasicType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/_ExtendCustomModelType.html">_ExtendCustomModelType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:12GSFoundation11_MeasurableP">_Measurable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/_RawEnumProtocol.html">_RawEnumProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:12GSFoundation14_TransformableP">_Transformable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Apply.html">Apply</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AsyncClosure.html">AsyncClosure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AsyncGroup.html">AsyncGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DeserializeOptions.html">DeserializeOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GSDefaults.html">GSDefaults</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GSDefaultsKey.html">GSDefaultsKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GSDeviceID.html">GSDeviceID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GSJSONConfiguration.html">GSJSONConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GSKeychain.html">GSKeychain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GSKeychainKey.html">GSKeychainKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Interval.html">Interval</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Interval</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>The &lsquo;Interval&rsquo; struct is handles a time duration used &lsquo;TimeUnit&rsquo;</p>
+
+<p>Use like:</p>
+<pre class="highlight plaintext"><code>let tenMinutes = 10.minutes
+let twoHours = 2.hours
+</code></pre>
+
+<p>And perform basic arithmetic operations like:</p>
+<pre class="highlight plaintext"><code>let interval = 10.minutes + 15.seconds
+let laterDate = Date.init() + 1.hours
+let result = 50.minutes &lt; 1.hour // will return true
+</code></pre>
+
+<p>Conver to another timeUnit like:</p>
+<pre class="highlight plaintext"><code>let seconds = 2.hours.inSeconds
+let timeInterval: TimeInterval = seconds.timeInterval
+</code></pre>
+
+<p>If you need a new timeUnit, you can:</p>
+<pre class="highlight plaintext"><code>public enum Week: TimeUnit {
+    public static var toTimeIntervalRatio: Double { return 604800 }
+}
+extension Interval {
+    public var inWeeks: Interval&lt;Week&gt; { return converted() }
+}
+extension Int {
+    public var weeks: Interval&lt;Week&gt; { return Interval&lt;Week&gt;(Double(self))
+}
+</code></pre>
+
+<p>Then:</p>
+<pre class="highlight plaintext"><code>let days = 2.weeks.inDays // will return 14
+</code></pre>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalV5valueSdv"></a>
+                    <a name="//apple_ref/swift/Property/value" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalV5valueSdv">value</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalV04timeB0Sdv"></a>
+                    <a name="//apple_ref/swift/Property/timeInterval" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalV04timeB0Sdv">timeInterval</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalVACyxGSdcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalVACyxGSdcfc">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalVACyxGSd04timeB0_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(timeInterval:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalVACyxGSd04timeB0_tcfc">init(timeInterval:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s8HashableP9hashValueSiv"></a>
+                    <a name="//apple_ref/swift/Property/hashValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s8HashableP9hashValueSiv">hashValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hashValue</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s9EquatableP2eeoiSbx_xtFZ"></a>
+                    <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s9EquatableP2eeoiSbx_xtFZ">==(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalV2eeoiSbACyxG_ACyqd__GtAA8TimeUnitRd__lFZ"></a>
+                    <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalV2eeoiSbACyxG_ACyqd__GtAA8TimeUnitRd__lFZ">==(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalV2neoiSbACyxG_ACyqd__GtAA8TimeUnitRd__lFZ"></a>
+                    <a name="//apple_ref/swift/Method/!=(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalV2neoiSbACyxG_ACyqd__GtAA8TimeUnitRd__lFZ">!=(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalV1loiSbACyxG_AEtFZ"></a>
+                    <a name="//apple_ref/swift/Method/&lt;(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalV1loiSbACyxG_AEtFZ">&lt;(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalV2leoiSbACyxG_AEtFZ"></a>
+                    <a name="//apple_ref/swift/Method/&lt;=(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalV2leoiSbACyxG_AEtFZ">&lt;=(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalV1goiSbACyxG_AEtFZ"></a>
+                    <a name="//apple_ref/swift/Method/&gt;(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalV1goiSbACyxG_AEtFZ">&gt;(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalV2geoiSbACyxG_AEtFZ"></a>
+                    <a name="//apple_ref/swift/Method/&gt;=(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalV2geoiSbACyxG_AEtFZ">&gt;=(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalV1loiSbACyxG_ACyqd__GtAA8TimeUnitRd__lFZ"></a>
+                    <a name="//apple_ref/swift/Method/&lt;(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalV1loiSbACyxG_ACyqd__GtAA8TimeUnitRd__lFZ">&lt;(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalV2leoiSbACyxG_ACyqd__GtAA8TimeUnitRd__lFZ"></a>
+                    <a name="//apple_ref/swift/Method/&lt;=(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalV2leoiSbACyxG_ACyqd__GtAA8TimeUnitRd__lFZ">&lt;=(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalV1goiSbACyxG_ACyqd__GtAA8TimeUnitRd__lFZ"></a>
+                    <a name="//apple_ref/swift/Method/&gt;(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalV1goiSbACyxG_ACyqd__GtAA8TimeUnitRd__lFZ">&gt;(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalV2geoiSbACyxG_ACyqd__GtAA8TimeUnitRd__lFZ"></a>
+                    <a name="//apple_ref/swift/Method/&gt;=(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalV2geoiSbACyxG_ACyqd__GtAA8TimeUnitRd__lFZ">&gt;=(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalV6inDaysACyAA3DayOGv"></a>
+                    <a name="//apple_ref/swift/Property/inDays" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalV6inDaysACyAA3DayOGv">inDays</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalV7inHoursACyAA4HourOGv"></a>
+                    <a name="//apple_ref/swift/Property/inHours" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalV7inHoursACyAA4HourOGv">inHours</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalV9inSecondsACyAA6SecondOGv"></a>
+                    <a name="//apple_ref/swift/Property/inSeconds" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalV9inSecondsACyAA6SecondOGv">inSeconds</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalV9inMinutesACyAA6MinuteOGv"></a>
+                    <a name="//apple_ref/swift/Property/inMinutes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalV9inMinutesACyAA6MinuteOGv">inMinutes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalV13inMillsecondsACyAA10MillsecondOGv"></a>
+                    <a name="//apple_ref/swift/Property/inMillseconds" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalV13inMillsecondsACyAA10MillsecondOGv">inMillseconds</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalV14inMicrosecondsACyAA11MicrosecondOGv"></a>
+                    <a name="//apple_ref/swift/Property/inMicroseconds" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalV14inMicrosecondsACyAA11MicrosecondOGv">inMicroseconds</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalV13inNanosecondsACyAA10NanosecondOGv"></a>
+                    <a name="//apple_ref/swift/Property/inNanoseconds" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalV13inNanosecondsACyAA10NanosecondOGv">inNanoseconds</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalV9convertedACyqd__Gqd__m2to_tAA8TimeUnitRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/converted(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalV9convertedACyqd__Gqd__m2to_tAA8TimeUnitRd__lF">converted(to:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/GloomySunday049" target="_blank" rel="external">Gloomy.Sunday</a>. All rights reserved. (Last updated: 2018-02-23)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

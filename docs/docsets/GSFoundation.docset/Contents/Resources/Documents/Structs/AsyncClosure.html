@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AsyncClosure Struct Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/AsyncClosure" class="dashAnchor"></a>
+    <a title="AsyncClosure Struct Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">GSFoundation Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/orgs/Sky-And-Hammer"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">GSFoundation Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        AsyncClosure Struct Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CustomDateFormatterTransform.html">CustomDateFormatterTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DataTransform.html">DataTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DateFormatterTransform.html">DateFormatterTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DateTransform.html">DateTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DecimalTransform.html">DecimalTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EnumTransform.html">EnumTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GSCountDownTimer.html">GSCountDownTimer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GSTimer.html">GSTimer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HexColorTransfrom.html">HexColorTransfrom</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IS09601DateTransform.html">IS09601DateTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:12GSFoundation6MapperC">Mapper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MappingPropertyHandler.html">MappingPropertyHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransformOf.html">TransformOf</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/URLTransform.html">URLTransform</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Day.html">Day</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Hour.html">Hour</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Microsecond.html">Microsecond</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Millsecond.html">Millsecond</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Minute.html">Minute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Nanosecond.html">Nanosecond</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Second.html">Second</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SwizzleResult.html">SwizzleResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Collection.html">Collection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DispatchQoS.html">DispatchQoS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DispatchQoS/QoSClass.html">– QoSClass</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DispatchTimeInterval.html">DispatchTimeInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Double.html">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/GS.html">GS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSObject.html">NSObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/RawRepresentable.html">RawRepresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/qos_class_t.html">qos_class_t</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12GSFoundation3llloiyAA6MapperC_SaySi_AA22MappingPropertyHandlerCtGtF">&lt;&lt;&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12GSFoundation3llloiyAA6MapperC_Si_AA22MappingPropertyHandlerCttF">&lt;&lt;&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&gt;&gt;&gt;(_:_:).html">&gt;&gt;&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12GSFoundation12_fatailErrorxSS_xyKXK5valuetKlF">_fatailError(_:value:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:12GSFoundation25GSJSONCustomTransformableP">GSJSONCustomTransformable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:12GSFoundation14GSJSONEnumTypeP">GSJSONEnumType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GSJSONType.html">GSJSONType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TimeUnit.html">TimeUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TransformType.html">TransformType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/_ExtendCustomBasicType.html">_ExtendCustomBasicType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/_ExtendCustomModelType.html">_ExtendCustomModelType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:12GSFoundation11_MeasurableP">_Measurable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/_RawEnumProtocol.html">_RawEnumProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:12GSFoundation14_TransformableP">_Transformable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Apply.html">Apply</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AsyncClosure.html">AsyncClosure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AsyncGroup.html">AsyncGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DeserializeOptions.html">DeserializeOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GSDefaults.html">GSDefaults</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GSDefaultsKey.html">GSDefaultsKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GSDeviceID.html">GSDeviceID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GSJSONConfiguration.html">GSJSONConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GSKeychain.html">GSKeychain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GSKeychainKey.html">GSKeychainKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Interval.html">Interval</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>AsyncClosure</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AsyncClosure</span><span class="o">&lt;</span><span class="kt">In</span><span class="p">,</span> <span class="kt">Out</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>The &lsquo;Async&rsquo; struct is handles an internally &lsquo;@convention(block) () -&gt; Swift.Void&rsquo;</p>
+
+<p>Chainable dispatch closure with GCD:</p>
+<pre class="highlight plaintext"><code>Async.background{
+    // run on background queue
+}.main {
+    // run on main queue
+}
+</code></pre>
+
+<p>All moderns queue classes:</p>
+<pre class="highlight plaintext"><code>Async.main {}
+Async.userInteractive {}
+Async.userInitiated {}
+Async.utility {}
+Async.background {}
+Async.customQueue(aCustomQueue) {}
+</code></pre>
+
+<p>Dispatch closure after delay:</p>
+<pre class="highlight plaintext"><code>Async.main(after: seconds) {}
+</code></pre>
+
+<p>Cancel closure not yet dispatched</p>
+<pre class="highlight plaintext"><code>let closure = Async.background {
+    // some work
+}
+let closure2 = closure.background {
+    // some other work
+}
+Async.main {
+    closure.cancel() // first closure is not cancelled
+    closure2.cancel() // second closure is cancelled
+}
+</code></pre>
+
+<p>Wait for block to finish:</p>
+<pre class="highlight plaintext"><code>let block = Async.background { // do stuff }
+// do other stuff
+// wait for "Do stuff" to finish
+block.wait()
+// do rest of stuff
+</code></pre>
+
+<p>See <a href="https://github.com/duemunk/Async">https://github.com/duemunk/Async</a></p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation12AsyncClosureV6outputq_Sgv"></a>
+                    <a name="//apple_ref/swift/Property/output" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation12AsyncClosureV6outputq_Sgv">output</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AsyncClosure</span><span class="o">&lt;</span><span class="kt">In</span><span class="p">,</span> <span class="kt">Out</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Static%20methods"></a>
+                <a name="//apple_ref/swift/Section/Static methods" class="dashAnchor"></a>
+                <a href="#/Static%20methods">
+                  <h3 class="section-name">Static methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation12AsyncClosureV4mainACyytqd__GSdSg5after_qd__yctlFZ"></a>
+                    <a name="//apple_ref/swift/Method/main(after:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation12AsyncClosureV4mainACyytqd__GSdSg5after_qd__yctlFZ">main(after:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends a closure to be run asynchronously on the main thread</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">main</span><span class="o">&lt;</span><span class="kt">O</span><span class="o">&gt;</span><span class="p">(</span><span class="n">after</span> <span class="nv">seconds</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">_</span> <span class="nv">closure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">O</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AsyncClosure</span><span class="o">&lt;</span><span class="kt">Void</span><span class="p">,</span> <span class="kt">O</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>seconds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>after how many seconds the closure should be run</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>closure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the closure that is to be passed to be run on the queue</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>an &lsquo;Async&rsquo; struct</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation12AsyncClosureV15userInteractiveACyytqd__GSdSg5after_qd__yctlFZ"></a>
+                    <a name="//apple_ref/swift/Method/userInteractive(after:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation12AsyncClosureV15userInteractiveACyytqd__GSdSg5after_qd__yctlFZ">userInteractive(after:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends a closure to be run asynchronously on a queue with a quality of service of QOS_CLASS_USER_INTERACTIVE</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">userInteractive</span><span class="o">&lt;</span><span class="kt">O</span><span class="o">&gt;</span><span class="p">(</span><span class="n">after</span> <span class="nv">seconds</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">_</span> <span class="nv">closure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">O</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AsyncClosure</span><span class="o">&lt;</span><span class="kt">Void</span><span class="p">,</span> <span class="kt">O</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>seconds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>after how many seconds the closure should be run</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>closure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the closure that is to be passed to be run on the queue</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>an &lsquo;Async&rsquo; struct</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation12AsyncClosureV13userInitiatedACyytqd__GSdSg5after_qd__yctlFZ"></a>
+                    <a name="//apple_ref/swift/Method/userInitiated(after:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation12AsyncClosureV13userInitiatedACyytqd__GSdSg5after_qd__yctlFZ">userInitiated(after:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends a closure to be run asynchronously on a queue with a quality of service of QOS_CLASS_USER_INITIATED</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">userInitiated</span><span class="o">&lt;</span><span class="kt">O</span><span class="o">&gt;</span><span class="p">(</span><span class="n">after</span> <span class="nv">seconds</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">_</span> <span class="nv">closure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">O</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AsyncClosure</span><span class="o">&lt;</span><span class="kt">Void</span><span class="p">,</span> <span class="kt">O</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>seconds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>after how many seconds the closure should be run</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>closure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the closure that is to be passed to be run on the queue</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>an &lsquo;Async&rsquo; struct</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation12AsyncClosureV7utilityACyytqd__GSdSg5after_qd__yctlFZ"></a>
+                    <a name="//apple_ref/swift/Method/utility(after:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation12AsyncClosureV7utilityACyytqd__GSdSg5after_qd__yctlFZ">utility(after:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends a closure to be run asynchronously on a queue with a quality of service of QOS_CLASS_UTILITY</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">utility</span><span class="o">&lt;</span><span class="kt">O</span><span class="o">&gt;</span><span class="p">(</span><span class="n">after</span> <span class="nv">seconds</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">_</span> <span class="nv">closure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">O</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AsyncClosure</span><span class="o">&lt;</span><span class="kt">Void</span><span class="p">,</span> <span class="kt">O</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>seconds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>after how many seconds the closure should be run</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>closure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the closure that is to be passed to be run on the queue</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>an &lsquo;Async&rsquo; struct</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation12AsyncClosureV10backgroundACyytqd__GSdSg5after_qd__yctlFZ"></a>
+                    <a name="//apple_ref/swift/Method/background(after:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation12AsyncClosureV10backgroundACyytqd__GSdSg5after_qd__yctlFZ">background(after:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends a closure to be run asynchronously on a queue with a quality of service of QOS_CLASS_BACKGROUND</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">background</span><span class="o">&lt;</span><span class="kt">O</span><span class="o">&gt;</span><span class="p">(</span><span class="n">after</span> <span class="nv">seconds</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">_</span> <span class="nv">closure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">O</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AsyncClosure</span><span class="o">&lt;</span><span class="kt">Void</span><span class="p">,</span> <span class="kt">O</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>seconds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>after how many seconds the closure should be run</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>closure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the closure that is to be passed to be run on the queue</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>an &lsquo;Async&rsquo; struct</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation12AsyncClosureV6customACyytqd__GSo13DispatchQueueC5queue_SdSg5afterqd__yctlFZ"></a>
+                    <a name="//apple_ref/swift/Method/custom(queue:after:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation12AsyncClosureV6customACyytqd__GSo13DispatchQueueC5queue_SdSg5afterqd__yctlFZ">custom(queue:after:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends a closure to be run asynchronously on a custom queue</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">custom</span><span class="o">&lt;</span><span class="kt">O</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">queue</span><span class="p">:</span> <span class="kt">DispatchQueue</span><span class="p">,</span> <span class="n">after</span> <span class="nv">seconds</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">_</span> <span class="nv">closure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">O</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AsyncClosure</span><span class="o">&lt;</span><span class="kt">Void</span><span class="p">,</span> <span class="kt">O</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>seconds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>after how many seconds the closure should be run</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>closure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the closure that is to be passed to be run on the queue</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>an &lsquo;Async&rsquo; struct</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Instance Methods" class="dashAnchor"></a>
+                <a href="#/Instance%20Methods">
+                  <h3 class="section-name">Instance Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation12AsyncClosureV4mainACyq_qd__GSdSg5after_qd__q_ctlF"></a>
+                    <a name="//apple_ref/swift/Method/main(after:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation12AsyncClosureV4mainACyq_qd__GSdSg5after_qd__q_ctlF">main(after:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends the a closure to be run asynchronously on main thread, after the current closure has finished</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">main</span><span class="o">&lt;</span><span class="kt">O</span><span class="o">&gt;</span><span class="p">(</span><span class="n">after</span> <span class="nv">seconds</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">_</span> <span class="nv">chainingClosure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Out</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">O</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AsyncClosure</span><span class="o">&lt;</span><span class="kt">Out</span><span class="p">,</span> <span class="kt">O</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>seconds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>after how many seconds the closure should be run</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>chainingClosure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the closure that is to be passed to be run on the queue</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>an &lsquo;Async&rsquo; struct</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation12AsyncClosureV15userInteractiveACyq_qd__GSdSg5after_qd__q_ctlF"></a>
+                    <a name="//apple_ref/swift/Method/userInteractive(after:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation12AsyncClosureV15userInteractiveACyq_qd__GSdSg5after_qd__q_ctlF">userInteractive(after:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends the a closure to be run asynchronously on a queue with a quality of service of QOS_CLASS_USER_INTERACTIVE, after the current closure has finished</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">userInteractive</span><span class="o">&lt;</span><span class="kt">O</span><span class="o">&gt;</span><span class="p">(</span><span class="n">after</span> <span class="nv">seconds</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">_</span> <span class="nv">chainingClosure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Out</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">O</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AsyncClosure</span><span class="o">&lt;</span><span class="kt">Out</span><span class="p">,</span> <span class="kt">O</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>seconds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>after how many seconds the closure should be run</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>chainingClosure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the closure that is to be passed to be run on the queue</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An &lsquo;Async&rsquo; struct</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation12AsyncClosureV13userInitiatedACyq_qd__GSdSg5after_qd__q_ctlF"></a>
+                    <a name="//apple_ref/swift/Method/userInitiated(after:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation12AsyncClosureV13userInitiatedACyq_qd__GSdSg5after_qd__q_ctlF">userInitiated(after:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends the a closure to be run asynchronously on a queue with a quality of service of QOS_CLASS_USER_INITIATED, after the current closure has finished</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">userInitiated</span><span class="o">&lt;</span><span class="kt">O</span><span class="o">&gt;</span><span class="p">(</span><span class="n">after</span> <span class="nv">seconds</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">_</span> <span class="nv">chainingClosure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Out</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">O</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AsyncClosure</span><span class="o">&lt;</span><span class="kt">Out</span><span class="p">,</span> <span class="kt">O</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>seconds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>after how many seconds the closure should be run</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>chainingClosure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the closure that is to be passed to be run on the queue</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>an &lsquo;Async&rsquo; struct</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation12AsyncClosureV7utilityACyq_qd__GSdSg5after_qd__q_ctlF"></a>
+                    <a name="//apple_ref/swift/Method/utility(after:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation12AsyncClosureV7utilityACyq_qd__GSdSg5after_qd__q_ctlF">utility(after:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends the a closure to be run asynchronously on a queue with a quality of service of QOS_CLASS_UTILITY, after the current closure has finished</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">utility</span><span class="o">&lt;</span><span class="kt">O</span><span class="o">&gt;</span><span class="p">(</span><span class="n">after</span> <span class="nv">seconds</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">_</span> <span class="nv">chainingClosure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Out</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">O</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AsyncClosure</span><span class="o">&lt;</span><span class="kt">Out</span><span class="p">,</span> <span class="kt">O</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>seconds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>after how many seconds the closure should be run</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>chainingClosure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the closure that is to be passed to be run on the queue</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>an &lsquo;Async&rsquo; struct</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation12AsyncClosureV10backgroundACyq_qd__GSdSg5after_qd__q_ctlF"></a>
+                    <a name="//apple_ref/swift/Method/background(after:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation12AsyncClosureV10backgroundACyq_qd__GSdSg5after_qd__q_ctlF">background(after:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends the a closure to be run asynchronously on a queue with a quality of service of QOS_CLASS_BACKGROUND, after the current closure has finished</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">background</span><span class="o">&lt;</span><span class="kt">O</span><span class="o">&gt;</span><span class="p">(</span><span class="n">after</span> <span class="nv">seconds</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">_</span> <span class="nv">chainingClosure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Out</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">O</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AsyncClosure</span><span class="o">&lt;</span><span class="kt">Out</span><span class="p">,</span> <span class="kt">O</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>seconds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>after how many seconds the closure should be run</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>chainingClosure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the closure that is to be passed to be run on the queue</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>an &lsquo;Async&rsquo; struct</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation12AsyncClosureV6customACyq_qd__GSo13DispatchQueueC5queue_SdSg5afterqd__q_ctlF"></a>
+                    <a name="//apple_ref/swift/Method/custom(queue:after:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation12AsyncClosureV6customACyq_qd__GSo13DispatchQueueC5queue_SdSg5afterqd__q_ctlF">custom(queue:after:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends the a closure to be run asynchronously on a custom queue, after the current closure has finished</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">custom</span><span class="o">&lt;</span><span class="kt">O</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">queue</span><span class="p">:</span> <span class="kt">DispatchQueue</span><span class="p">,</span> <span class="n">after</span> <span class="nv">seconds</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">_</span> <span class="nv">chainingClosure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Out</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">O</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AsyncClosure</span><span class="o">&lt;</span><span class="kt">Out</span><span class="p">,</span> <span class="kt">O</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>seconds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>after how many seconds the closure should be run</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>chainingClosure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the closure that is to be passed to be run on the queue</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>an &lsquo;Async&rsquo; struct</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation12AsyncClosureV6cancelyyF"></a>
+                    <a name="//apple_ref/swift/Method/cancel()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation12AsyncClosureV6cancelyyF">cancel()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convenience function to call &lsquo;dispatch_block_cancel()&rsquo; on the encapsulated closure.
+Cancel the current closure, if it hasn&rsquo;t already begun running to GCD</p>
+
+<p>For example:</p>
+<pre class="highlight plaintext"><code>let closure = Async.background {
+    // some work
+}
+let closure2 = closure.background {
+    // some other work
+}
+Async.main {
+    closure.cancel() // first closure is not cancelled
+    closure2.cancel() // second closure is cancelled
+}
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">cancel</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation12AsyncClosureV4wait8Dispatch0E13TimeoutResultOAE0E12TimeIntervalOSg7seconds_tF"></a>
+                    <a name="//apple_ref/swift/Method/wait(seconds:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation12AsyncClosureV4wait8Dispatch0E13TimeoutResultOAE0E12TimeIntervalOSg7seconds_tF">wait(seconds:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convenience function t call &lsquo;dispatch_block_wait()&rsquo; on the excapsulated closure
+Waits for the current closure to finish, on any given thread</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">wait</span><span class="p">(</span><span class="nv">seconds</span><span class="p">:</span> <span class="kt">DispatchTimeInterval</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">DispatchTimeoutResult</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>seconds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>max seconds to wait for closure to finish, if value is 0.0, it uses DISPATCH_TIME_FOREVER, 0.0 by default</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/GloomySunday049" target="_blank" rel="external">Gloomy.Sunday</a>. All rights reserved. (Last updated: 2018-02-23)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

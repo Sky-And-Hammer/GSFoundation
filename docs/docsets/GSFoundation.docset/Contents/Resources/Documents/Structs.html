@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Structs  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="Structs  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">GSFoundation Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/orgs/Sky-And-Hammer"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">GSFoundation Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Structs  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/CustomDateFormatterTransform.html">CustomDateFormatterTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DataTransform.html">DataTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DateFormatterTransform.html">DateFormatterTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DateTransform.html">DateTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DecimalTransform.html">DecimalTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EnumTransform.html">EnumTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/GSCountDownTimer.html">GSCountDownTimer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/GSTimer.html">GSTimer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/HexColorTransfrom.html">HexColorTransfrom</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/IS09601DateTransform.html">IS09601DateTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/s:12GSFoundation6MapperC">Mapper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/MappingPropertyHandler.html">MappingPropertyHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TransformOf.html">TransformOf</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/URLTransform.html">URLTransform</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/Day.html">Day</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Hour.html">Hour</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Microsecond.html">Microsecond</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Millsecond.html">Millsecond</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Minute.html">Minute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Nanosecond.html">Nanosecond</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Second.html">Second</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SwizzleResult.html">SwizzleResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Collection.html">Collection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/DispatchQoS.html">DispatchQoS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/DispatchQoS/QoSClass.html">– QoSClass</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/DispatchTimeInterval.html">DispatchTimeInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Double.html">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/GS.html">GS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/NSObject.html">NSObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/RawRepresentable.html">RawRepresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/qos_class_t.html">qos_class_t</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions/&lt;--(_:_:).html">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:12GSFoundation3llloiyAA6MapperC_SaySi_AA22MappingPropertyHandlerCtGtF">&lt;&lt;&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:12GSFoundation3llloiyAA6MapperC_Si_AA22MappingPropertyHandlerCttF">&lt;&lt;&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions/&gt;&gt;&gt;(_:_:).html">&gt;&gt;&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:12GSFoundation12_fatailErrorxSS_xyKXK5valuetKlF">_fatailError(_:value:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:12GSFoundation25GSJSONCustomTransformableP">GSJSONCustomTransformable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:12GSFoundation14GSJSONEnumTypeP">GSJSONEnumType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/GSJSONType.html">GSJSONType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/TimeUnit.html">TimeUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/TransformType.html">TransformType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/_ExtendCustomBasicType.html">_ExtendCustomBasicType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/_ExtendCustomModelType.html">_ExtendCustomModelType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:12GSFoundation11_MeasurableP">_Measurable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/_RawEnumProtocol.html">_RawEnumProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:12GSFoundation14_TransformableP">_Transformable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/Apply.html">Apply</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AsyncClosure.html">AsyncClosure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AsyncGroup.html">AsyncGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/DeserializeOptions.html">DeserializeOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/GSDefaults.html">GSDefaults</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/GSDefaultsKey.html">GSDefaultsKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/GSDeviceID.html">GSDeviceID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/GSJSONConfiguration.html">GSJSONConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/GSKeychain.html">GSKeychain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/GSKeychainKey.html">GSKeychainKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Interval.html">Interval</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Structs</h1>
+            <p>The following structs are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation18DeserializeOptionsV"></a>
+                    <a name="//apple_ref/swift/Struct/DeserializeOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation18DeserializeOptionsV">DeserializeOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Structs/DeserializeOptions.html" class="slightly-smaller">See more</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation19GSJSONConfigurationV"></a>
+                    <a name="//apple_ref/swift/Struct/GSJSONConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation19GSJSONConfigurationV">GSJSONConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Structs/GSJSONConfiguration.html" class="slightly-smaller">See more</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Async%20Struct"></a>
+                <a name="//apple_ref/swift/Section/Async Struct" class="dashAnchor"></a>
+                <a href="#/Async%20Struct">
+                  <h3 class="section-name">Async Struct</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation12AsyncClosureV"></a>
+                    <a name="//apple_ref/swift/Struct/AsyncClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation12AsyncClosureV">AsyncClosure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The &lsquo;Async&rsquo; struct is handles an internally &lsquo;@convention(block) () -&gt; Swift.Void&rsquo;</p>
+
+<p>Chainable dispatch closure with GCD:</p>
+<pre class="highlight plaintext"><code>Async.background{
+    // run on background queue
+}.main {
+    // run on main queue
+}
+</code></pre>
+
+<p>All moderns queue classes:</p>
+<pre class="highlight plaintext"><code>Async.main {}
+Async.userInteractive {}
+Async.userInitiated {}
+Async.utility {}
+Async.background {}
+Async.customQueue(aCustomQueue) {}
+</code></pre>
+
+<p>Dispatch closure after delay:</p>
+<pre class="highlight plaintext"><code>Async.main(after: seconds) {}
+</code></pre>
+
+<p>Cancel closure not yet dispatched</p>
+<pre class="highlight plaintext"><code>let closure = Async.background {
+    // some work
+}
+let closure2 = closure.background {
+    // some other work
+}
+Async.main {
+    closure.cancel() // first closure is not cancelled
+    closure2.cancel() // second closure is cancelled
+}
+</code></pre>
+
+<p>Wait for block to finish:</p>
+<pre class="highlight plaintext"><code>let block = Async.background { // do stuff }
+// do other stuff
+// wait for "Do stuff" to finish
+block.wait()
+// do rest of stuff
+</code></pre>
+
+<p>See <a href="https://github.com/duemunk/Async">https://github.com/duemunk/Async</a></p>
+
+                        <a href="Structs/AsyncClosure.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AsyncClosure</span><span class="o">&lt;</span><span class="kt">In</span><span class="p">,</span> <span class="kt">Out</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Apply%20-%20DSL%20for%20%60dispatch_apply%60"></a>
+                <a name="//apple_ref/swift/Section/Apply - DSL for `dispatch_apply`" class="dashAnchor"></a>
+                <a href="#/Apply%20-%20DSL%20for%20%60dispatch_apply%60">
+                  <h3 class="section-name">Apply - DSL for `dispatch_apply`</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation5ApplyV"></a>
+                    <a name="//apple_ref/swift/Struct/Apply" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation5ApplyV">Apply</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>&lsquo;Apply&rsquo; is an empty struct with convenience static functions to parallelize a for-loop, as provided by &lsquo;dispatch_apply&rsquo;</p>
+
+<p>For example:</p>
+<pre class="highlight plaintext"><code>Apply.background(100) { i in // call closure in parallel }
+</code></pre>
+
+<p>&lsquo;Apply&rsquo; runs a closure multiple itmes, before returning. if you want run the block asynchronously from the current thread, wrap it in an &lsquo;Async&rsquo; closure:</p>
+
+<p>like:</p>
+<pre class="highlight plaintext"><code>Async.background {
+    Apply.background(100) { i in // calls closure in parallel asynchronously }
+}
+</code></pre>
+
+                        <a href="Structs/Apply.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Apply</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/AsuncGroup%20Struct"></a>
+                <a name="//apple_ref/swift/Section/AsuncGroup Struct" class="dashAnchor"></a>
+                <a href="#/AsuncGroup%20Struct">
+                  <h3 class="section-name">AsuncGroup Struct</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation10AsyncGroupV"></a>
+                    <a name="//apple_ref/swift/Struct/AsyncGroup" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation10AsyncGroupV">AsyncGroup</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The &lsquo;AsyncGroup&rsquo; struct facilitates working with groups of asynchronous closures. handles a internally &lsquo;dispatch_grout_t&rsquo;</p>
+
+<p>Multiple dispatch closure with GCD:</p>
+<pre class="highlight plaintext"><code>let group = AsyncGroup()
+group.background {
+    //  run on background queue
+}.utility {
+    //  run on utility queue, after the previous closure
+}
+group.wait()
+</code></pre>
+
+<p>All moderns queue classes:</p>
+<pre class="highlight plaintext"><code>group.main()
+group.userInteractive()
+group.userInitiated()
+group.utility()
+group.backgound()
+group.custom(aCustomQueue)()
+</code></pre>
+
+<p>Wait for group to finish:</p>
+<pre class="highlight plaintext"><code>let group = AsyncGroup()
+group.backgound { //  do stuff }
+group.backgound { //  do other stuff in parallel }
+// wait for both to finish
+group.wait()
+// do rest of stuff
+</code></pre>
+
+                        <a href="Structs/AsyncGroup.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AsyncGroup</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation13GSDefaultsKeyV"></a>
+                    <a name="//apple_ref/swift/Struct/GSDefaultsKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation13GSDefaultsKeyV">GSDefaultsKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a &lsquo;GSDefaultsKey&rsquo; with an associated generic value type confirming to the &lsquo;Codable&rsquo; protocol</p>
+<pre class="highlight plaintext"><code>static let someKey = Key&lt;ValyeType&gt;("someKey")
+</code></pre>
+
+                        <a href="Structs/GSDefaultsKey.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GSDefaultsKey</span><span class="o">&lt;</span><span class="kt">ValueType</span><span class="p">:</span> <span class="kt">Codable</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation10GSDefaultsV"></a>
+                    <a name="//apple_ref/swift/Struct/GSDefaults" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation10GSDefaultsV">GSDefaults</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides strongly typed values associated with the lifetime of an application. Apropriate for user perferences</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Warning
+these should not be used to store sensitive information that could compromise
+the application or the user&rsquo;s security and privacy
+
+</div>
+
+                        <a href="Structs/GSDefaults.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GSDefaults</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation10GSDeviceIDV"></a>
+                    <a name="//apple_ref/swift/Struct/GSDeviceID" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation10GSDeviceIDV">GSDeviceID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A struct for identfy the device, include an uuid and timestamp for initialized</p>
+
+                        <a href="Structs/GSDeviceID.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GSDeviceID</span><span class="p">:</span> <span class="kt"><a href="Protocols/GSJSONType.html">GSJSONType</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation13GSKeychainKeyV"></a>
+                    <a name="//apple_ref/swift/Struct/GSKeychainKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation13GSKeychainKeyV">GSKeychainKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a &lsquo;GSKeychainKey&rsquo; with an associated generic value type confirming to the &lsquo;GSJSONType&rsquo; protocol</p>
+<pre class="highlight plaintext"><code>static let someKey = Key&lt;ValyeType&gt;("someKey")
+</code></pre>
+
+                        <a href="Structs/GSKeychainKey.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GSKeychainKey</span><span class="o">&lt;</span><span class="kt">ValueType</span><span class="p">:</span> <span class="kt"><a href="Protocols/GSJSONType.html">GSJSONType</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation10GSKeychainV"></a>
+                    <a name="//apple_ref/swift/Struct/GSKeychain" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation10GSKeychainV">GSKeychain</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides strongly typed values associated with the lifetime of an application. Apropriate for user perferences</p>
+
+                        <a href="Structs/GSKeychain.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GSKeychain</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12GSFoundation8IntervalV"></a>
+                    <a name="//apple_ref/swift/Struct/Interval" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12GSFoundation8IntervalV">Interval</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The &lsquo;Interval&rsquo; struct is handles a time duration used &lsquo;TimeUnit&rsquo;</p>
+
+<p>Use like:</p>
+<pre class="highlight plaintext"><code>let tenMinutes = 10.minutes
+let twoHours = 2.hours
+</code></pre>
+
+<p>And perform basic arithmetic operations like:</p>
+<pre class="highlight plaintext"><code>let interval = 10.minutes + 15.seconds
+let laterDate = Date.init() + 1.hours
+let result = 50.minutes &lt; 1.hour // will return true
+</code></pre>
+
+<p>Conver to another timeUnit like:</p>
+<pre class="highlight plaintext"><code>let seconds = 2.hours.inSeconds
+let timeInterval: TimeInterval = seconds.timeInterval
+</code></pre>
+
+<p>If you need a new timeUnit, you can:</p>
+<pre class="highlight plaintext"><code>public enum Week: TimeUnit {
+    public static var toTimeIntervalRatio: Double { return 604800 }
+}
+extension Interval {
+    public var inWeeks: Interval&lt;Week&gt; { return converted() }
+}
+extension Int {
+    public var weeks: Interval&lt;Week&gt; { return Interval&lt;Week&gt;(Double(self))
+}
+</code></pre>
+
+<p>Then:</p>
+<pre class="highlight plaintext"><code>let days = 2.weeks.inDays // will return 14
+</code></pre>
+
+                        <a href="Structs/Interval.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Interval</span><span class="o">&lt;</span><span class="kt">Unit</span><span class="p">:</span> <span class="kt"><a href="Protocols/TimeUnit.html">TimeUnit</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/GloomySunday049" target="_blank" rel="external">Gloomy.Sunday</a>. All rights reserved. (Last updated: 2018-02-23)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
